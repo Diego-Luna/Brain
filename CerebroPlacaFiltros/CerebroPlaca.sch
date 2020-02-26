@@ -526,17 +526,6 @@ Wire Wire Line
 Text GLabel 7000 4050 0    50   Input ~ 0
 P0.26
 $Comp
-L cerebro-rescue:USB_OTG-nrfmicro-rescue J?
-U 1 1 5E504B1F
-P 6400 1250
-F 0 "J?" H 6457 1717 50  0000 C CNN
-F 1 "USB_OTG-nrfmicro-rescue" H 6457 1626 50  0000 C CNN
-F 2 "" H 6550 1200 50  0001 C CNN
-F 3 "" H 6550 1200 50  0001 C CNN
-	1    6400 1250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:USB_C_Receptacle_USB2.0 J?
 U 1 1 5E505AAC
 P 7550 1450
@@ -641,33 +630,6 @@ Wire Wire Line
 Wire Wire Line
 	8900 1150 8800 1150
 Connection ~ 8900 1100
-NoConn ~ 6300 1650
-NoConn ~ 6700 1450
-$Comp
-L nrfmicro-rescue:GND #PWR0115
-U 1 1 5E52C5DE
-P 6500 1650
-F 0 "#PWR0115" H 6500 1400 50  0001 C CNN
-F 1 "GND" V 6505 1522 50  0000 R CNN
-F 2 "" H 6500 1650 50  0001 C CNN
-F 3 "" H 6500 1650 50  0001 C CNN
-	1    6500 1650
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6500 1650 6400 1650
-Text GLabel 6800 1350 2    50   Input ~ 0
-DATA-
-Text GLabel 6800 1250 2    50   Input ~ 0
-DATA+
-Wire Wire Line
-	6700 1250 6800 1250
-Wire Wire Line
-	6800 1350 6700 1350
-Text GLabel 6800 1050 2    50   Input ~ 0
-VBUS
-Wire Wire Line
-	6800 1050 6700 1050
 $Comp
 L cerebro-cache:Connector_Generic_Conn_01x02 J?
 U 1 1 5E5362F8
