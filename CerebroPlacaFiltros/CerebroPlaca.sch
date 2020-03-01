@@ -822,17 +822,6 @@ Wire Wire Line
 	1530 5720 1530 5570
 Wire Wire Line
 	1530 5570 2680 5570
-$Comp
-L power:GNDA #PWR?
-U 1 1 5E6A9C8B
-P 4480 4720
-F 0 "#PWR?" H 4480 4470 50  0001 C CNN
-F 1 "GNDA" H 4485 4547 50  0000 C CNN
-F 2 "" H 4480 4720 50  0001 C CNN
-F 3 "" H 4480 4720 50  0001 C CNN
-	1    4480 4720
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4380 4420 4480 4420
 Wire Wire Line
@@ -1041,9 +1030,7 @@ Wire Wire Line
 	4380 1720 4470 1720
 Text Label 4470 1720 0    50   ~ 0
 MOSI
-Wire Wire Line
-	4380 2370 4460 2370
-Text Label 4460 2370 0    50   ~ 0
+Text Label 4620 2370 0    50   ~ 0
 RSTB
 Wire Wire Line
 	8990 1620 8890 1620
@@ -1114,7 +1101,7 @@ Text Label 4380 2820 0    50   ~ 0
 CLKSEL
 Text Label 4380 2920 0    50   ~ 0
 CLK
-Text Label 4380 2470 0    50   ~ 0
+Text Label 4620 2470 0    50   ~ 0
 PWDN
 Wire Wire Line
 	8990 1820 8920 1820
@@ -1330,4 +1317,62 @@ Text Label 2380 3820 2    50   ~ 0
 AVDD
 Text Label 1580 5820 0    50   ~ 0
 VREFP
+$Comp
+L Device:R_Small R?
+U 1 1 5E5DCB4C
+P 4420 2220
+F 0 "R?" H 4300 2280 50  0000 L CNN
+F 1 "10K" H 4250 2220 50  0000 L CNN
+F 2 "" H 4420 2220 50  0001 C CNN
+F 3 "~" H 4420 2220 50  0001 C CNN
+	1    4420 2220
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4380 2470 4540 2470
+$Comp
+L Device:R_Small R?
+U 1 1 5E5EA517
+P 4540 2220
+F 0 "R?" H 4599 2266 50  0000 L CNN
+F 1 "10K" H 4600 2190 50  0000 L CNN
+F 2 "" H 4540 2220 50  0001 C CNN
+F 3 "~" H 4540 2220 50  0001 C CNN
+	1    4540 2220
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4380 2370 4420 2370
+Wire Wire Line
+	4420 2320 4420 2370
+Connection ~ 4420 2370
+Wire Wire Line
+	4420 2370 4620 2370
+Wire Wire Line
+	4540 2320 4540 2470
+Connection ~ 4540 2470
+Wire Wire Line
+	4540 2470 4620 2470
+Wire Wire Line
+	4420 2120 4420 2070
+Wire Wire Line
+	4420 2070 4540 2070
+Wire Wire Line
+	4540 2120 4540 2070
+Connection ~ 4540 2070
+Wire Wire Line
+	4540 2070 4730 2070
+Text Label 4730 2070 0    50   ~ 0
+DVDD
+$Comp
+L power:GND #PWR?
+U 1 1 5E62F77C
+P 4480 4720
+F 0 "#PWR?" H 4480 4470 50  0001 C CNN
+F 1 "GND" H 4485 4547 50  0000 C CNN
+F 2 "" H 4480 4720 50  0001 C CNN
+F 3 "" H 4480 4720 50  0001 C CNN
+	1    4480 4720
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
