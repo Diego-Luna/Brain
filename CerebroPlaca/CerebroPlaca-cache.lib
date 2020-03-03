@@ -60,6 +60,32 @@ X PROG 5 -400 -100 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# Connector_Conn_01x04_Male
+#
+DEF Connector_Conn_01x04_Male J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Conn_01x04_Male" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 34 -195 0 -205 1 1 6 F
+S 34 -95 0 -105 1 1 6 F
+S 34 5 0 -5 1 1 6 F
+S 34 105 0 95 1 1 6 F
+P 2 1 1 6 50 -200 34 -200 N
+P 2 1 1 6 50 -100 34 -100 N
+P 2 1 1 6 50 0 34 0 N
+P 2 1 1 6 50 100 34 100 N
+X Pin_1 1 200 100 150 L 50 50 1 1 P
+X Pin_2 2 200 0 150 L 50 50 1 1 P
+X Pin_3 3 200 -100 150 L 50 50 1 1 P
+X Pin_4 4 200 -200 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Connector_Conn_01x08_Male
 #
 DEF Connector_Conn_01x08_Male J 0 40 Y N 1 F N
@@ -195,6 +221,29 @@ X 2 2 150 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_L
+#
+DEF Device_L L 0 40 N N 1 F N
+F0 "L" -50 0 50 V V C CNN
+F1 "Device_L" 75 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
+A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
+A 0 25 25 -899 899 0 1 0 N 0 0 0 50
+A 0 75 25 -899 899 0 1 0 N 0 50 0 100
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_LED
 #
 DEF Device_LED D 0 40 N N 1 F N
@@ -255,28 +304,6 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Jumper_SolderJumper_2_Open
-#
-DEF Jumper_SolderJumper_2_Open JP 0 0 Y N 1 F N
-F0 "JP" 0 80 50 H V C CNN
-F1 "Jumper_SolderJumper_2_Open" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- SolderJumper*Open*
-$ENDFPLIST
-DRAW
-A -10 0 40 901 -901 0 1 0 N -10 40 -10 -40
-A -10 0 40 901 -901 0 1 0 F -10 40 -10 -40
-A 10 0 40 -899 899 0 1 0 N 10 -40 10 40
-A 10 0 40 -899 899 0 1 0 F 10 -40 10 40
-P 2 0 1 0 -10 40 -10 -40 N
-P 2 0 1 0 10 40 10 -40 N
-X A 1 -150 0 100 R 50 50 1 1 P
-X B 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Regulator_Linear_AP2112K-3.3
 #
 DEF Regulator_Linear_AP2112K-3.3 U 0 10 Y Y 1 F N
@@ -298,22 +325,25 @@ X VOUT 5 300 100 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# cerebro-cache_Connector_Generic_Conn_01x02
+# Switch_SW_MEC_5G
 #
-DEF cerebro-cache_Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "cerebro-cache_Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+DEF Switch_SW_MEC_5G SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "Switch_SW_MEC_5G" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
 $FPLIST
- Connector*:*_1x??_*
+ SW*MEC*5G*
 $ENDFPLIST
 DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X A 1 -200 0 100 R 50 50 0 1 P
+X B 3 200 0 100 L 50 50 0 1 P
+X A 2 -200 0 100 R 50 50 1 1 P N
+X B 4 200 0 100 L 50 50 1 1 P N
 ENDDRAW
 ENDDEF
 #
@@ -345,20 +375,6 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# nrfmicro-rescue_VCC
-#
-DEF nrfmicro-rescue_VCC #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "nrfmicro-rescue_VCC" 0 150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C 0 75 25 0 1 0 N
-P 2 0 1 0 0 0 0 50 N
-X VCC 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
@@ -414,6 +430,37 @@ X P1.13 6 -700 600 100 R 50 50 1 1 I
 X P0.02/AIN0 7 -700 500 100 R 50 50 1 1 I
 X P0.29/AIN5 8 -700 400 100 R 50 50 1 1 I
 X P0.31/AIN7 9 -700 300 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# power_+3.3V
+#
+DEF power_+3.3V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+3.3V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_VBUS
+#
+DEF power_VBUS #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_VBUS" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X VBUS 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
