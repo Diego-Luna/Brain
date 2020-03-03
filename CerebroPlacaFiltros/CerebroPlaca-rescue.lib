@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# ADS1294-TI_gv
+# ADS1294-TI_gv-CerebroPlaca-rescue
 #
-DEF ADS1294-TI_gv U 0 40 Y Y 1 F N
+DEF ADS1294-TI_gv-CerebroPlaca-rescue U 0 40 Y Y 1 F N
 F0 "U" 400 2500 60 H V C CNN
-F1 "ADS1294-TI_gv" 50 2500 60 H V C CNN
+F1 "ADS1294-TI_gv-CerebroPlaca-rescue" 50 2500 60 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -75,11 +75,11 @@ X IN4N 9 -750 1550 300 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# AO3407A-AO3407A
+# AO3407A-AO3407A-CerebroPlaca-rescue
 #
-DEF AO3407A-AO3407A Q 0 40 N N 1 L N
+DEF AO3407A-AO3407A-CerebroPlaca-rescue Q 0 40 N N 1 L N
 F0 "Q" -340 200 50 H V L BNN
-F1 "AO3407A-AO3407A" -350 -250 50 H V L BNN
+F1 "AO3407A-AO3407A-CerebroPlaca-rescue" -350 -250 50 H V L BNN
 F2 "SOT95P280X125-3N" 0 0 50 H I L BNN
 F3 "Alpha and Omega Semiconductor" 0 0 50 H I L BNN
 F4 "IPC-7351B" 0 0 50 H I L BNN
@@ -113,30 +113,11 @@ X D 3 100 -200 100 U 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic_Conn_01x02-cerebro-cache
+# E73-2G4M08S1C-52840-nrfmicro-CerebroPlaca-rescue
 #
-DEF Connector_Generic_Conn_01x02-cerebro-cache J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic_Conn_01x02-cerebro-cache" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# E73-2G4M08S1C-52840-nrfmicro
-#
-DEF E73-2G4M08S1C-52840-nrfmicro U 0 40 Y Y 1 F N
+DEF E73-2G4M08S1C-52840-nrfmicro-CerebroPlaca-rescue U 0 40 Y Y 1 F N
 F0 "U" 0 1150 50 H V C CNN
-F1 "E73-2G4M08S1C-52840-nrfmicro" 0 -1100 50 H V C CNN
+F1 "E73-2G4M08S1C-52840-nrfmicro-CerebroPlaca-rescue" 0 -1100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -187,11 +168,11 @@ X P0.31/AIN7 9 -700 300 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# GND-nrfmicro-rescue
+# GND-nrfmicro-rescue-CerebroPlaca-rescue
 #
-DEF GND-nrfmicro-rescue #PWR 0 0 Y Y 1 F P
+DEF GND-nrfmicro-rescue-CerebroPlaca-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "GND-nrfmicro-rescue" 0 -150 50 H V C CNN
+F1 "GND-nrfmicro-rescue-CerebroPlaca-rescue" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -200,11 +181,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Switch_SW_SPDT-cerebro-cache
+# Switch_SW_SPDT-cerebro-cache-CerebroPlaca-rescue
 #
-DEF Switch_SW_SPDT-cerebro-cache SW 0 0 Y N 1 F N
+DEF Switch_SW_SPDT-cerebro-cache-CerebroPlaca-rescue SW 0 0 Y N 1 F N
 F0 "SW" 0 170 50 H V C CNN
-F1 "Switch_SW_SPDT-cerebro-cache" 0 -200 50 H V C CNN
+F1 "Switch_SW_SPDT-cerebro-cache-CerebroPlaca-rescue" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -215,20 +196,6 @@ P 2 0 1 0 -60 10 65 90 N
 X A 1 200 100 100 L 50 50 1 1 P
 X B 2 -200 0 100 R 50 50 1 1 P
 X C 3 200 -100 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# VCC-nrfmicro-rescue
-#
-DEF VCC-nrfmicro-rescue #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "VCC-nrfmicro-rescue" 0 150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C 0 75 25 0 1 0 N
-P 2 0 1 0 0 0 0 50 N
-X VCC 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #

@@ -22,11 +22,11 @@ X PROG 5 -400 -100 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# CerebroPlaca-rescue_ADS1294-TI_gv
+# CerebroPlaca-rescue_ADS1294-TI_gv-CerebroPlaca-rescue
 #
-DEF CerebroPlaca-rescue_ADS1294-TI_gv U 0 40 Y Y 1 F N
+DEF CerebroPlaca-rescue_ADS1294-TI_gv-CerebroPlaca-rescue U 0 40 Y Y 1 F N
 F0 "U" 400 2500 60 H V C CNN
-F1 "CerebroPlaca-rescue_ADS1294-TI_gv" 50 2500 60 H V C CNN
+F1 "CerebroPlaca-rescue_ADS1294-TI_gv-CerebroPlaca-rescue" 50 2500 60 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -96,11 +96,11 @@ X IN4N 9 -750 1550 300 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# CerebroPlaca-rescue_AO3407A-AO3407A
+# CerebroPlaca-rescue_AO3407A-AO3407A-CerebroPlaca-rescue
 #
-DEF CerebroPlaca-rescue_AO3407A-AO3407A Q 0 40 N N 1 L N
+DEF CerebroPlaca-rescue_AO3407A-AO3407A-CerebroPlaca-rescue Q 0 40 N N 1 L N
 F0 "Q" -340 200 50 H V L BNN
-F1 "CerebroPlaca-rescue_AO3407A-AO3407A" -350 -250 50 H V L BNN
+F1 "CerebroPlaca-rescue_AO3407A-AO3407A-CerebroPlaca-rescue" -350 -250 50 H V L BNN
 F2 "SOT95P280X125-3N" 0 0 50 H I L BNN
 F3 "Alpha and Omega Semiconductor" 0 0 50 H I L BNN
 F4 "IPC-7351B" 0 0 50 H I L BNN
@@ -134,11 +134,11 @@ X D 3 100 -200 100 U 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #
-# CerebroPlaca-rescue_E73-2G4M08S1C-52840-nrfmicro
+# CerebroPlaca-rescue_E73-2G4M08S1C-52840-nrfmicro-CerebroPlaca-rescue
 #
-DEF CerebroPlaca-rescue_E73-2G4M08S1C-52840-nrfmicro U 0 40 Y Y 1 F N
+DEF CerebroPlaca-rescue_E73-2G4M08S1C-52840-nrfmicro-CerebroPlaca-rescue U 0 40 Y Y 1 F N
 F0 "U" 0 1150 50 H V C CNN
-F1 "CerebroPlaca-rescue_E73-2G4M08S1C-52840-nrfmicro" 0 -1100 50 H V C CNN
+F1 "CerebroPlaca-rescue_E73-2G4M08S1C-52840-nrfmicro-CerebroPlaca-rescue" 0 -1100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -189,11 +189,11 @@ X P0.31/AIN7 9 -700 300 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# CerebroPlaca-rescue_GND-nrfmicro-rescue
+# CerebroPlaca-rescue_GND-nrfmicro-rescue-CerebroPlaca-rescue
 #
-DEF CerebroPlaca-rescue_GND-nrfmicro-rescue #PWR 0 0 Y Y 1 F P
+DEF CerebroPlaca-rescue_GND-nrfmicro-rescue-CerebroPlaca-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "CerebroPlaca-rescue_GND-nrfmicro-rescue" 0 -150 50 H V C CNN
+F1 "CerebroPlaca-rescue_GND-nrfmicro-rescue-CerebroPlaca-rescue" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -202,11 +202,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# CerebroPlaca-rescue_Switch_SW_SPDT-cerebro-cache
+# CerebroPlaca-rescue_Switch_SW_SPDT-cerebro-cache-CerebroPlaca-rescue
 #
-DEF CerebroPlaca-rescue_Switch_SW_SPDT-cerebro-cache SW 0 0 Y N 1 F N
+DEF CerebroPlaca-rescue_Switch_SW_SPDT-cerebro-cache-CerebroPlaca-rescue SW 0 0 Y N 1 F N
 F0 "SW" 0 170 50 H V C CNN
-F1 "CerebroPlaca-rescue_Switch_SW_SPDT-cerebro-cache" 0 -200 50 H V C CNN
+F1 "CerebroPlaca-rescue_Switch_SW_SPDT-cerebro-cache-CerebroPlaca-rescue" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -356,9 +356,9 @@ $FPLIST
  LED_THT:*
 $ENDFPLIST
 DRAW
-P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 10 -50 -50 -50 50 N
 P 2 0 1 0 -50 0 50 0 N
-P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
 P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
 P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
 X K 1 -150 0 100 R 50 50 1 1 P
@@ -436,8 +436,8 @@ $FPLIST
 $ENDFPLIST
 DRAW
 P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
-P 6 0 1 8 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
+P 6 0 1 10 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
 X K 1 -150 0 100 R 50 50 1 1 P
 X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW

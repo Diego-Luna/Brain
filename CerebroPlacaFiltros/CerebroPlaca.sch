@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:CerebroPlaca-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,7 +15,7 @@ Comment3 "Ft. Electronic Cats"
 Comment4 "Moon Makers"
 $EndDescr
 $Comp
-L CerebroPlaca-rescue:E73-2G4M08S1C-52840-nrfmicro U?
+L CerebroPlaca-rescue:E73-2G4M08S1C-52840-nrfmicro-CerebroPlaca-rescue U?
 U 1 1 5E4D9260
 P 9690 2220
 F 0 "U?" H 9665 3585 50  0000 C CNN
@@ -27,7 +28,7 @@ $EndComp
 Wire Wire Line
 	8690 1220 8990 1220
 $Comp
-L CerebroPlaca-rescue:GND-nrfmicro-rescue #PWR0101
+L CerebroPlaca-rescue:GND-nrfmicro-rescue-CerebroPlaca-rescue #PWR0101
 U 1 1 5E4DE4C5
 P 8690 1520
 F 0 "#PWR0101" H 8690 1270 50  0001 C CNN
@@ -73,7 +74,7 @@ Wire Wire Line
 Wire Wire Line
 	8340 3220 8990 3220
 $Comp
-L CerebroPlaca-rescue:GND-nrfmicro-rescue #PWR0104
+L CerebroPlaca-rescue:GND-nrfmicro-rescue-CerebroPlaca-rescue #PWR0104
 U 1 1 5E4E325C
 P 10490 3120
 F 0 "#PWR0104" H 10490 2870 50  0001 C CNN
@@ -133,7 +134,7 @@ F 3 "~" H 6520 3260 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CerebroPlaca-rescue:GND-nrfmicro-rescue #PWR0105
+L CerebroPlaca-rescue:GND-nrfmicro-rescue-CerebroPlaca-rescue #PWR0105
 U 1 1 5E4E79AC
 P 6520 3410
 F 0 "#PWR0105" H 6520 3160 50  0001 C CNN
@@ -170,7 +171,7 @@ Wire Wire Line
 Wire Wire Line
 	6680 7390 6580 7390
 $Comp
-L CerebroPlaca-rescue:GND-nrfmicro-rescue #PWR0106
+L CerebroPlaca-rescue:GND-nrfmicro-rescue-CerebroPlaca-rescue #PWR0106
 U 1 1 5E4EF534
 P 5730 7490
 F 0 "#PWR0106" H 5730 7240 50  0001 C CNN
@@ -225,7 +226,7 @@ F 3 "~" H 6530 6890 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CerebroPlaca-rescue:GND-nrfmicro-rescue #PWR0107
+L CerebroPlaca-rescue:GND-nrfmicro-rescue-CerebroPlaca-rescue #PWR0107
 U 1 1 5E4F4E0F
 P 6780 6890
 F 0 "#PWR0107" H 6780 6640 50  0001 C CNN
@@ -260,7 +261,7 @@ F 3 "~" H 7350 5310 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CerebroPlaca-rescue:GND-nrfmicro-rescue #PWR0109
+L CerebroPlaca-rescue:GND-nrfmicro-rescue-CerebroPlaca-rescue #PWR0109
 U 1 1 5E4FC8BD
 P 7350 5560
 F 0 "#PWR0109" H 7350 5310 50  0001 C CNN
@@ -280,7 +281,7 @@ Connection ~ 7350 5110
 Wire Wire Line
 	7350 5460 7350 5560
 $Comp
-L CerebroPlaca-rescue:GND-nrfmicro-rescue #PWR0110
+L CerebroPlaca-rescue:GND-nrfmicro-rescue-CerebroPlaca-rescue #PWR0110
 U 1 1 5E4FE7F8
 P 6800 5560
 F 0 "#PWR0110" H 6800 5310 50  0001 C CNN
@@ -319,7 +320,7 @@ Wire Wire Line
 Wire Wire Line
 	6250 5110 6250 5160
 $Comp
-L CerebroPlaca-rescue:GND-nrfmicro-rescue #PWR0111
+L CerebroPlaca-rescue:GND-nrfmicro-rescue-CerebroPlaca-rescue #PWR0111
 U 1 1 5E50568F
 P 5850 5660
 F 0 "#PWR0111" H 5850 5410 50  0001 C CNN
@@ -346,7 +347,7 @@ F 3 "~" H 5500 5310 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CerebroPlaca-rescue:GND-nrfmicro-rescue #PWR0112
+L CerebroPlaca-rescue:GND-nrfmicro-rescue-CerebroPlaca-rescue #PWR0112
 U 1 1 5E507D22
 P 5500 5660
 F 0 "#PWR0112" H 5500 5410 50  0001 C CNN
@@ -376,7 +377,7 @@ Wire Wire Line
 	5500 5110 5500 5160
 Connection ~ 5500 5110
 $Comp
-L CerebroPlaca-rescue:AO3407A-AO3407A Q?
+L CerebroPlaca-rescue:AO3407A-AO3407A-CerebroPlaca-rescue Q?
 U 1 1 5E4E6AE3
 P 6150 4660
 F 0 "Q?" H 6357 4614 50  0000 L CNN
@@ -407,7 +408,7 @@ Connection ~ 5350 5110
 Wire Wire Line
 	5350 5110 5250 5110
 $Comp
-L CerebroPlaca-rescue:Switch_SW_SPDT-cerebro-cache SW?
+L CerebroPlaca-rescue:Switch_SW_SPDT-cerebro-cache-CerebroPlaca-rescue SW?
 U 1 1 5E4F24BD
 P 6600 4510
 F 0 "SW?" H 6600 4185 50  0000 C CNN
@@ -464,7 +465,7 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 5990 17
 $EndComp
 NoConn ~ 5540 2680
 $Comp
-L CerebroPlaca-rescue:GND-nrfmicro-rescue #PWR0113
+L CerebroPlaca-rescue:GND-nrfmicro-rescue-CerebroPlaca-rescue #PWR0113
 U 1 1 5E50D022
 P 5940 2680
 F 0 "#PWR0113" H 5940 2430 50  0001 C CNN
@@ -525,7 +526,7 @@ F 3 "~" H 6940 1480 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CerebroPlaca-rescue:GND-nrfmicro-rescue #PWR0114
+L CerebroPlaca-rescue:GND-nrfmicro-rescue-CerebroPlaca-rescue #PWR0114
 U 1 1 5E51E12E
 P 7290 1430
 F 0 "#PWR0114" H 7290 1180 50  0001 C CNN
@@ -837,7 +838,7 @@ Connection ~ 4480 4520
 Wire Wire Line
 	4480 4520 4480 4620
 $Comp
-L CerebroPlaca-rescue:GND-nrfmicro-rescue #PWR?
+L CerebroPlaca-rescue:GND-nrfmicro-rescue-CerebroPlaca-rescue #PWR?
 U 1 1 5E50718C
 P 920 2130
 F 0 "#PWR?" H 920 1880 50  0001 C CNN
@@ -1247,7 +1248,7 @@ F 3 "" H 730 4920 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CerebroPlaca-rescue:ADS1294-TI_gv U?
+L CerebroPlaca-rescue:ADS1294-TI_gv-CerebroPlaca-rescue U?
 U 1 1 5E4E799B
 P 3430 3720
 F 0 "U?" H 3530 6357 60  0000 C CNN
