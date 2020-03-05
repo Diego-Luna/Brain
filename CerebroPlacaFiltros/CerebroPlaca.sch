@@ -1208,7 +1208,7 @@ U 1 1 5E4E799B
 P 3430 3720
 F 0 "U2" H 3530 6357 60  0000 C CNN
 F 1 "ADS1294" H 3530 6251 60  0000 C CNN
-F 2 "" H 3430 3720 60  0000 C CNN
+F 2 "ADS1294IPAG:ADS1294IPAG" H 3920 3530 60  0000 C CNN
 F 3 "" H 3430 3720 60  0000 C CNN
 	1    3430 3720
 	1    0    0    -1  
@@ -1773,4 +1773,44 @@ F 3 "~" H 5850 5360 50  0001 C CNN
 	1    5850 5360
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	9500 6540 9500 5340
+Wire Notes Line
+	9500 5340 11220 5340
+Text Notes 10150 5490 0    50   ~ 0
+Electrodos
+$Comp
+L Connector:Conn_01x03_Male J3
+U 1 1 5E6AA605
+P 10510 5930
+F 0 "J3" H 10482 5862 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 10482 5953 50  0000 R CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical" H 10510 5930 50  0001 C CNN
+F 3 "~" H 10510 5930 50  0001 C CNN
+	1    10510 5930
+	-1   0    0    1   
+$EndComp
+$Comp
+L nrfmicro-rescue:GND #PWR01
+U 1 1 5E6AD0C0
+P 9880 6090
+F 0 "#PWR01" H 9880 5840 50  0001 C CNN
+F 1 "GND" H 9885 5917 50  0000 C CNN
+F 2 "" H 9880 6090 50  0001 C CNN
+F 3 "" H 9880 6090 50  0001 C CNN
+	1    9880 6090
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9880 6090 10310 6090
+Wire Wire Line
+	10310 6090 10310 6030
+Text Label 9740 5830 0    50   ~ 0
+Electodo_1_+
+Text Label 9740 5930 0    50   ~ 0
+Electodo_1_-
+Wire Wire Line
+	9740 5930 10310 5930
+Wire Wire Line
+	10310 5830 9740 5830
 $EndSCHEMATC
